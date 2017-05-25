@@ -17,7 +17,7 @@ public class App
     	  try {  
               Class.forName(driverName);  
               Connection con = null;  
-              con = DriverManager.getConnection("jdbc:hive2://192.10.200.81:10000/comm_data", "hive", "fFg#42f!2");  
+              con = DriverManager.getConnection("jdbc:hive2://192.10.200.81:10000/comm_data", "hive", "");  
               Statement stmt = con.createStatement();  
               ResultSet res = null;  
               String sql = "select * from student";  
